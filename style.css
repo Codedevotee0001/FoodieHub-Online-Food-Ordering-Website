@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fff8f0;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background: #ff6b35 !important;
+}
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff !important;
+}
+.nav-link {
+  color: #ffe0cc !important;
+  font-weight: 500;
+}
+.nav-link:hover, .nav-link.active {
+  color: #fff !important;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #ff6b35, #f7c59f);
+  color: white;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin: 16px 0 30px;
+}
+.btn-order {
+  background: #fff;
+  color: #ff6b35;
+  font-weight: 700;
+  padding: 12px 36px;
+  border-radius: 30px;
+  border: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.btn-order:hover {
+  background: #ff6b35;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b35;
+  margin-bottom: 10px;
+}
+.section-sub {
+  text-align: center;
+  color: #888;
+  margin-bottom: 40px;
+}
+
+/* Feature cards */
+.feature-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: 0.3s;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(255,107,53,0.15);
+}
+.feature-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 14px;
+}
+
+/* Dish cards */
+.dish-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+.dish-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 30px rgba(255,107,53,0.2);
+}
+.dish-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.dish-card .card-body {
+  padding: 16px;
+}
+.dish-card .price {
+  color: #ff6b35;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+.btn-add {
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+.btn-add:hover {
+  background: #e55a28;
+  color: #fff;
+}
+
+/* About */
+.about-hero {
+  background: linear-gradient(135deg, #ff6b35, #f7c59f);
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+.team-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+.team-card .avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #ff6b35;
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 14px;
+}
+
+/* Login */
+.login-section {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #ff6b35, #f7c59f);
+}
+.login-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+.login-card h2 {
+  color: #ff6b35;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.form-control:focus {
+  border-color: #ff6b35;
+  box-shadow: 0 0 0 0.2rem rgba(255,107,53,0.2);
+}
+.btn-login {
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  transition: 0.3s;
+}
+.btn-login:hover {
+  background: #e55a28;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: #ccc;
+  padding: 40px 0 20px;
+}
+footer h5 {
+  color: #ff6b35;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+footer a {
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+}
+footer a:hover {
+  color: #ff6b35;
+}
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 16px;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Testimonials */
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+}
+.testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+.stars { color: #ff6b35; font-size: 1.1rem; }
+
+/* Category filter */
+.filter-btn {
+  border: 2px solid #ff6b35;
+  color: #ff6b35;
+  background: transparent;
+  border-radius: 20px;
+  padding: 6px 20px;
+  margin: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: #ff6b35;
+  color: #fff;
+}
+
+.section-pad { padding: 70px 0; }
+.bg-light-orange { background: #fff3eb; }

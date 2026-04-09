@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FoodieHub - Order Delicious Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">🍔 FoodieHub</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="dishes.html">Dishes</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Hungry? We've Got You 🍕</h1>
+    <p>Fresh, hot, and delivered to your door in 30 minutes or less.</p>
+    <a href="dishes.html" class="btn btn-order">Order Now</a>
+  </div>
+</section>
+
+<!-- Features -->
+<section class="section-pad">
+  <div class="container">
+    <h2 class="section-title">Why Choose FoodieHub?</h2>
+    <p class="section-sub">We make ordering food simple, fast, and delicious.</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="icon">🚀</div>
+          <h5>Fast Delivery</h5>
+          <p class="text-muted">Get your food delivered hot and fresh within 30 minutes, guaranteed.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="icon">👨‍🍳</div>
+          <h5>Expert Chefs</h5>
+          <p class="text-muted">Our dishes are crafted by professional chefs with years of experience.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="icon">🌿</div>
+          <h5>Fresh Ingredients</h5>
+          <p class="text-muted">We source only the freshest, locally grown ingredients every single day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Popular Dishes -->
+<section class="section-pad bg-light-orange">
+  <div class="container">
+    <h2 class="section-title">Popular Dishes</h2>
+    <p class="section-sub">Our customers can't stop ordering these.</p>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="dish-card">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400" alt="Burger"/>
+          <div class="card-body">
+            <h6>Classic Burger</h6>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <span class="price">Rs. 149</span>
+              <button class="btn-add" onclick="addToCart('Classic Burger')">+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="dish-card">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Pizza"/>
+          <div class="card-body">
+            <h6>Margherita Pizza</h6>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <span class="price">Rs. 199</span>
+              <button class="btn-add" onclick="addToCart('Margherita Pizza')">+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="dish-card">
+          <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400" alt="Noodles"/>
+          <div class="card-body">
+            <h6>Spicy Noodles</h6>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <span class="price">Rs. 179</span>
+              <button class="btn-add" onclick="addToCart('Spicy Noodles')">+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="dish-card">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400" alt="Dessert"/>
+          <div class="card-body">
+            <h6>Chocolate Cake</h6>
+            <div class="d-flex justify-content-between align-items-center mt-2">
+              <span class="price">Rs. 119</span>
+              <button class="btn-add" onclick="addToCart('Chocolate Cake')">+ Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="dishes.html" class="btn btn-order" style="background:#ff6b35;color:#fff;">View All Dishes</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="section-pad">
+  <div class="container">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <p class="section-sub">Real reviews from real food lovers.</p>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="mt-2">"Best food delivery I've ever tried. The burger was absolutely perfect and arrived piping hot!"</p>
+          <strong>— Sarah M.</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="mt-2">"Super fast delivery and the pizza tasted like it came straight from Italy. Highly recommend!"</p>
+          <strong>— James K.</strong>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <div class="stars">★★★★☆</div>
+          <p class="mt-2">"Great variety of dishes and the app is so easy to use. My go-to for weekend dinners."</p>
+          <strong>— Priya R.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section style="background:#ff6b35;padding:60px 0;text-align:center;color:#fff;">
+  <div class="container">
+    <h2 style="font-size:2rem;font-weight:700;">Ready to Order?</h2>
+    <p style="font-size:1.1rem;margin:12px 0 24px;">Sign up today and get 20% off your first order.</p>
+    <a href="login.html" class="btn btn-order">Get Started</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <h5>🍔 FoodieHub</h5>
+        <p>Bringing the best food from top restaurants straight to your doorstep.</p>
+      </div>
+      <div class="col-md-2 mb-4">
+        <h5>Pages</h5>
+        <a href="index.html">Home</a>
+        <a href="dishes.html">Dishes</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h5>Contact</h5>
+        <p>📍 123 Food Street, Mumbai</p>
+        <p>📞 +91 98765 43210</p>
+        <p>✉️ hello@foodiehub.com</p>
+      </div>
+      <div class="col-md-3 mb-4">
+        <h5>Follow Us</h5>
+        <a href="#">🐦 Twitter</a>
+        <a href="#">📸 Instagram</a>
+        <a href="#">👍 Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 FoodieHub. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="cartToast" class="toast align-items-center text-bg-success border-0" role="alert">
+    <div class="d-flex">
+      <div class="toast-body" id="toastMsg">Item added!</div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
